@@ -39,6 +39,12 @@ class ReadyCodes{
         //will return 0
     }
     
+    //length and charAt
+    void iterateString() {
+        int sz = s.length();
+        int fst = s.charAt(0);
+    }
+    
     //sort array
     void sortExample(int A[]) {
         Arrays.sort(A);
