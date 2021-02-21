@@ -7,3 +7,10 @@ println(string.takeLast(8)) // Grade>>>
 println(string.takeWhile { !it.isLetter() }) // <<<
 println(string.takeLastWhile { !it.isLetter() }) // >>>
 
+//Convert Numeric String to Int value
+fun addTwoDigits(n: Int): Int {
+    val str = n.toString()
+    val res = str[0].toInt() - 48
+    val res2 = str[1].toInt() - 48
+    return res + res2
+}
