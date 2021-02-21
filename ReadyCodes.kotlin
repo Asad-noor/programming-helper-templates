@@ -1,0 +1,9 @@
+for (i in 1..5) print(i) = 12345
+or (i in 4 downTo 1 step 2) print(i) = 531
+
+val string = "<<<First Grade>>>"
+println(string.take(8)) // <<<First
+println(string.takeLast(8)) // Grade>>>
+println(string.takeWhile { !it.isLetter() }) // <<<
+println(string.takeLastWhile { !it.isLetter() }) // >>>
+
