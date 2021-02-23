@@ -23,3 +23,5 @@ fun isSorted(a: IntArray): Boolean {
     }
     return true
 }
+
+val totalDuplicates = list.count { it == "apple" }
