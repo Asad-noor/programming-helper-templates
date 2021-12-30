@@ -27,3 +27,12 @@ fun isSorted(a: IntArray): Boolean {
 val totalDuplicates = list.count { it == "apple" }
 
 println(bi.substringBeforeLast("1"))
+
+var Arr1 = arrayOf(1,10,4,6,15)  
+var Arr2 = arrayOf<Int>(1,10,4,6,15)  
+var Arr3 = arrayOf<String>("Surat","Mumbai","Rajkot")  
+var Arr4 = arrayOf(1,10,4, "Ajay","Prakesh")  
+var Arr5: IntArray = intArrayOf(5,10,15,20)
+
+// Array of integers of a size of N
+val arr = IntArray(N)
