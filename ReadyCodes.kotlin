@@ -25,3 +25,5 @@ fun isSorted(a: IntArray): Boolean {
 }
 
 val totalDuplicates = list.count { it == "apple" }
+
+println(bi.substringBeforeLast("1"))
