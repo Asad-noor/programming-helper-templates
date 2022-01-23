@@ -45,6 +45,12 @@ class ReadyCodes{
         int fst = s.charAt(0);
     }
     
+    void sortString(String str) {
+        char []arr = str.toCharArray();
+        Arrays.sort(arr);
+        System.out.print(String.valueOf(arr));
+    }
+    
     //sort array
     void sortExample(int A[]) {
         Arrays.sort(A);
