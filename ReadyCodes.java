@@ -51,6 +51,16 @@ class ReadyCodes{
         System.out.print(String.valueOf(arr));
     }
     
+    void replaceAllNumericChars() {
+        String res = res.replaceAll("([0-9])", "");
+        return res;
+    }
+    
+    void replaceAllAlphabets() {
+        String num = res.replaceAll("([A-Z])", "");
+        return num;
+    }
+    
     //sort array
     void sortExample(int A[]) {
         Arrays.sort(A);
