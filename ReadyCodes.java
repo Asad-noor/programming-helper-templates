@@ -1,28 +1,34 @@
 class ReadyCodes{
-    //is even by bitwise
-    int isEvenInt(int n) {
-        return (n & 1);
-    }
-    bollean isEven() {
-        return isEvenInt(5) == 0;
-    }
-    
+    //conversions
     //String to int
     void stringToInt() {
         String myString = "1234";
-        int foo = Integer.parseInt(myString);
+        int foo = Integer.parseInt(myString); //This method returns the string as a primitive type int.
+        
+        int foo2 = Integer.valueOf(myString); //This method returns the string as an integer object.
     }
     
     //int to String
     void intToString() {
         int a = 1234; 
-        String str1 = Integer.toString(a);
+        String str = String.valueOf(a); //This is the recommended way
+        
+        String str1 = Integer.toString(a); //In this way, you have to go through one extra step
     }
     
     //char to int
     void charToInt() {
         char c='1';  
         int a = Character.getNumericValue(c);  
+    }
+    
+    
+    //is even by bitwise
+    int isEvenInt(int n) {
+        return (n & 1);
+    }
+    bollean isEven() {
+        return isEvenInt(5) == 0;
     }
     
     //substring example
