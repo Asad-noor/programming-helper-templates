@@ -1,6 +1,10 @@
 fun String.isAllUnique(): Boolean = all(hashSetOf<Char>()::add) //true if the string has no double characters 
 
-chars.all { it.isLetterOrDigit() } //true if the string has only alphanumeric characters 
+val str = "abmdef"
+str.all { it.isLetterOrDigit() } //true if the string has only alphanumeric characters
+
+str.toCharArray().sorted().reversed() //sort it alphabetically then reverse
+println(intList.sorted()) //sorted where at the end "ed" it means it will not change the original list, will create a new one
 
 val str = "abcabc"
 val charsMap = mutableMapOf<Char, Int>()
