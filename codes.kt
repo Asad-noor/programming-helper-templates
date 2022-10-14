@@ -13,6 +13,23 @@ str.forEach{
 }
 print(charsMap) //{a=2, b=2, c=2}
 
+fun main(args: Array<String>) { //is prime
+    val num = 29
+    var flag = false
+    for (i in 2..num / 2) {
+        // condition for nonprime number
+        if (num % i == 0) {
+            flag = true
+            break
+        }
+    }
+
+    if (!flag)
+        println("$num is a prime number.")
+    else
+        println("$num is not a prime number.")
+}
+
 
 class University(private val repository: Repository<Student>) {
     fun getPaidCoursesWithTheNumbersOfSubscribedStudents(coursesCount: Int): Map<Course, Int> {
