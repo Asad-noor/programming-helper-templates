@@ -1,5 +1,18 @@
+Dynamic String array initialization
+val array = arrayOfNulls<String>(5)
+val arrayNumb = arrayOfNulls<Number>(5)
+for (i in array.indices) {
+    array[i] = i * i
+}
+ 
+var text= "Kotlin"
+for (letter in text) {
+    println(letter)
+}
 for (i in 1..5) print(i) = 12345
 or (i in 4 downTo 1 step 2) print(i) = 531
+for(strChar in testString) print(strChar) = will print the characters separately
+for(i in 0 until testString.length step 2) println(testString[i])
 
 val string = "<<<First Grade>>>"
 println(string.take(8)) // <<<First
@@ -28,6 +41,7 @@ val totalDuplicates = list.count { it == "apple" }
 
 println(bi.substringBeforeLast("1"))
 
+val array = charArrayOf('1', 'r')
 var Arr1 = arrayOf(1,10,4,6,15)  
 var Arr2 = arrayOf<Int>(1,10,4,6,15)  
 var Arr3 = arrayOf<String>("Surat","Mumbai","Rajkot")  
